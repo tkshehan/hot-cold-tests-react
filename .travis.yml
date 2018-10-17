@@ -1,0 +1,11 @@
+language: node_js
+node_js: node
+env:
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: D73bNbw6Iv7kc4VnERi+VbuwqlpuNmicx0qOURAThzzTxtJ20DJYzCyLAwcUp4SNGpuuefK+Whgm2Rz6/vrhndbSPc9phOk3gYELqhM91O29ngM3zBqjScUZkXXAqXR73IYaYmLcVik7NR//k8S10Sl2S7fDIIZ7ilxjBdCtVytjF6jNkzUEFHddUkox3WV/FvDkrXKo94O6YNW8S+IY2N/gZNuXyzhI8anVglEDjfsaPdHPDfeQc8ppsb9lVIstcyvr1drPq+WARii7XFqaHd3OsvuV/OQ2MxoXTsyOi0PBzP7yyP1wYxyiWalSxmRVnYnH7VnuJJArpmrAg1X2vlTTL2aMjVOCt0kjcskEX5kbDDZ9cgY0TGXEwIb1zIqjT2YDoNaA6hNMuEZKW+8W3e9fk8SbhGRgkSS0nATn5cQtSwF3gnkSqaR3gVkgcwJqjE3nuy6X630L953laFpS93pUewyfnrhPcJnHYnPHzIXhKB4SU0nULXZG3WY9QasK8Xhok1/uppuQJdgnIWpEsandUEeVfqKthiA4m0FxYvR5TM9zRzojv32eKIwhYdxwdNqSh5JuKPvoGDVGjYnwSRLY0V7UJzeYL0oXvQc5zjK6IcUNubGYd0hnO16Reokwxni+Q4ISpXZgUMvEHvEUSS2KZ0opaGR3tSe2+Xj8tzg=
+  app: react-testing-hot-cold
+  on:
+    repo: tkshehan/hot-cold-tests-react
